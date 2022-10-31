@@ -1,0 +1,1 @@
+Server code for lab 7. Changes the returned color every 0.5 to 2.5 seconds. Procfile for Heroku deployment with gunicorn.
