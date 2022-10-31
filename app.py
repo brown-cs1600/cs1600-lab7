@@ -39,8 +39,7 @@ def create_app():
 
     @app.route('/color')
     def success():
-        with dataLock:
-            return color
+        return color
 
     # Initiate
     startThread()
