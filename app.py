@@ -27,14 +27,14 @@ def create_app():
             color = random.choice(COLORS)
 
         # Set the next thread to happen
-        colorThread = threading.Timer(random.uniform(0.5, 2.5), setColor, ())
+        colorThread = threading.Timer(random.uniform(0.05, 0.25), setColor, ())
         colorThread.start()
 
     def startThread():
         # Do initialisation stuff here
         global colorThread
         # Create your thread
-        colorThread = threading.Timer(random.uniform(0.5, 2.5), setColor, ())
+        colorThread = threading.Timer(random.uniform(0.05, 0.25), setColor, ())
         colorThread.start()
 
     @app.route('/color')
