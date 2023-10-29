@@ -41,6 +41,10 @@ def create_app():
     def success():
         return color
 
+    @app.route('/')
+    def hello_world():
+        return 'Hello, World!'
+
     # Initiate
     startThread()
     # When you kill Flask (SIGTERM), clear the trigger for the next thread
